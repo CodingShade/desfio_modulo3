@@ -1,15 +1,15 @@
-/* Estilos Globais */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e; /* Fundo escuro */
-  color: #e0e0e0; /* Texto claro */
+  background-color: #1e1e1e; 
+  color: #e0e0e0; 
   line-height: 1.6;
 }
 
 a {
-  color: #64b5f6; /* Azul claro para links */
+  color: #64b5f6; 
   text-decoration: none;
 }
 
@@ -18,9 +18,8 @@ a:hover {
 }
 
 button {
-  background-color: #64b5f6; /* Azul claro */
-  color: #1e1e1e; /* Texto escuro */
-  border: none;
+  background-color: #64b5f6; 
+  color: #1e1e1e;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -29,15 +28,15 @@ button {
 }
 
 button:hover {
-  background-color: #42a5f5; /* Azul mais claro */
+  background-color: #42a5f5; 
 }
 
 input {
   padding: 12px;
   border: 1px solid #444;
   border-radius: 5px;
-  background-color: #2c2c2c; /* Fundo escuro para inputs */
-  color: #e0e0e0; /* Texto claro */
+  background-color: #2c2c2c; 
+  color: #e0e0e0; 
   font-size: 16px;
   width: 100%;
   max-width: 400px;
@@ -47,12 +46,12 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #64b5f6; /* Azul claro ao focar */
+  border-color: #64b5f6; 
 }
 
-/* Header */
+
 header {
-  background-color: #121212; /* Preto mais escuro */
+  background-color: #121212; 
   color: #e0e0e0;
   padding: 20px;
   text-align: center;
@@ -65,7 +64,7 @@ header h1 {
   font-weight: 300;
 }
 
-/* Página Inicial */
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -84,21 +83,20 @@ header h1 {
   max-width: 500px;
 }
 
-/* Cards de Repositórios */
 .repo-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo */
-  gap: 20px; /* Espaçamento entre os cards */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
   padding: 20px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; /* Centraliza a lista */
+  margin: 0 auto; 
 }
 
 .repo-card {
-  background-color: #2c2c2c; /* Fundo escuro */
+  background-color: #2c2c2c; 
   border: 1px solid #444;
-  border-radius: 12px; /* Bordas mais arredondadas */
+  border-radius: 12px; 
   padding: 20px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -106,67 +104,67 @@ header h1 {
 
 .repo-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 .repo-card h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #64b5f6; /* Azul claro para títulos */
+  color: #64b5f6; 
 }
 
 .repo-card p {
   margin: 10px 0 0;
   font-size: 1rem;
-  color: #b0b0b0; /* Texto cinza claro */
+  color: #b0b0b0; 
 }
 
-/* Modal de Repositório */
+
 .repo-modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2c2c2c; /* Fundo escuro */
+  background-color: #2c2c2c; 
   border: 1px solid #444;
-  border-radius: 12px; /* Bordas mais arredondadas */
+  border-radius: 12px; 
   padding: 25px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Sombra mais suave */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); 
   z-index: 1000;
-  color: #e0e0e0; /* Texto claro */
+  color: #e0e0e0; 
 }
 
 .repo-modal h2 {
   margin: 0 0 20px;
   font-size: 1.8rem;
-  color: #64b5f6; /* Azul claro para títulos */
+  color: #64b5f6;
 }
 
 .repo-modal p {
   margin: 10px 0;
   font-size: 1rem;
-  color: #b0b0b0; /* Texto cinza claro */
+  color: #b0b0b0; 
 }
 
 .repo-modal a {
   display: inline-block;
   margin-top: 20px;
-  color: #64b5f6; /* Azul claro para links */
+  color: #64b5f6; 
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .repo-modal a:hover {
-  color: #42a5f5; /* Azul mais claro no hover */
+  color: #42a5f5; 
 }
 
 .repo-modal button {
   margin-top: 20px;
-  background-color: #64b5f6; /* Azul claro */
-  color: #1e1e1e; /* Texto escuro */
+  background-color: #64b5f6; 
+  color: #1e1e1e; 
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -176,24 +174,24 @@ header h1 {
 }
 
 .repo-modal button:hover {
-  background-color: #42a5f5; /* Azul mais claro no hover */
+  background-color: #42a5f5; 
 }
 
-/* Overlay do Modal */
+
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro */
+  background-color: rgba(0, 0, 0, 0.8); 
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .repo-modal {
     width: 95%;
@@ -209,7 +207,7 @@ header h1 {
   }
 
   .repo-list {
-    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    grid-template-columns: 1fr; 
   }
 
   .repo-card {
@@ -225,19 +223,19 @@ header h1 {
   }
 }
 
-/* Estilos para o UserProfile */
+
 .user-profile {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center; /* Centraliza o texto */
+  text-align: center; 
 }
 
 .user-info {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
+  align-items: center; 
+  text-align: center; 
   margin-bottom: 20px;
 }
 
@@ -245,42 +243,42 @@ header h1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #64b5f6; /* Azul claro */
+  border: 3px solid #64b5f6; 
   margin-bottom: 20px;
 }
 
 .user-info h2 {
   font-size: 2rem;
   margin: 10px 0;
-  color: #64b5f6; /* Azul claro para títulos */
+  color: #64b5f6; 
 }
 
 .user-info p {
-  color: #b0b0b0; /* Texto cinza claro */
+  color: #b0b0b0; 
 }
 
 .repos-title {
   font-size: 1.8rem;
-  color: #64b5f6; /* Azul claro para títulos */
+  color: #64b5f6;
   margin-bottom: 20px;
 }
 
 /* Lista de Repositórios */
 .repo-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo */
-  gap: 20px; /* Espaçamento entre os cards */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
   padding: 20px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; /* Centraliza a lista */
+  margin: 0 auto; 
 }
 
-/* Cards de Repositórios */
+
 .repo-card {
-  background-color: #2c2c2c; /* Fundo escuro */
+  background-color: #2c2c2c;
   border: 1px solid #444;
-  border-radius: 12px; /* Bordas mais arredondadas */
+  border-radius: 12px; 
   padding: 20px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -288,17 +286,17 @@ header h1 {
 
 .repo-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 .repo-card h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #64b5f6; /* Azul claro para títulos */
+  color: #64b5f6; 
 }
 
 .repo-card p {
   margin: 10px 0 0;
   font-size: 1rem;
-  color: #b0b0b0; /* Texto cinza claro */
+  color: #b0b0b0; 
 }
